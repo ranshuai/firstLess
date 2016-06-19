@@ -45,6 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(2);
+	__webpack_require__(6);
 
 /***/ },
 /* 1 */,
@@ -63,8 +64,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./common.less", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./common.less");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./base.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./base.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -82,7 +83,7 @@
 
 
 	// module
-	exports.push([module.id, "@charset \"utf-8\";\nhtml,\nbody,\nul,\nli,\nol,\ndl,\ndd,\ndt,\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nform,\nfieldset,\nlegend,\nimg {\n  margin: 0;\n  padding: 0;\n}\nfieldset,\nimg {\n  border: none;\n}\nimg {\n  display: block;\n}\naddress,\ncaption,\ncite,\ncode,\ndfn,\nth,\nvar {\n  font-style: normal;\n  font-weight: normal;\n}\nul,\nol {\n  list-style: none;\n}\ninput {\n  padding-top: 0;\n  padding-bottom: 0;\n  font-family: \"SimSun\", \"\\5B8B\\4F53\";\n}\ninput::-moz-focus-inner {\n  border: none;\n  padding: 0;\n}\nselect,\ninput {\n  vertical-align: middle;\n}\nselect,\ninput,\ntextarea {\n  font-size: 12px;\n  margin: 0;\n}\ninput[type=\"text\"],\ninput[type=\"password\"],\ntextarea {\n  outline-style: none;\n  -webkit-appearance: none;\n}\ntextarea {\n  resize: none;\n}\ninput,\ntextarea {\n  background: none;\n  border: none;\n}\ntable {\n  border-collapse: collapse;\n}\nbody {\n  color: #333;\n  font: 12px/20px \"SimSun\", \"\\5B8B\\4F53\", \"Arial Narrow\", HELVETICA;\n  background: #fff;\n}\na {\n  color: #666;\n  text-decoration: none;\n}\na:visited {\n  color: #666;\n}\na:hover,\na:active,\na:focus {\n  color: #ff8400;\n  text-decoration: underline;\n}\ndiv {\n  width: 200px;\n  height: 200px;\n  border: 1px solid #ccc;\n  background: red;\n}\n", ""]);
+	exports.push([module.id, ".frame_12k{\r\n    width: 1200px;\r\n    margin: 0 auto;\r\n}\r\n\r\n\r\n", ""]);
 
 	// exports
 
@@ -393,6 +394,46 @@
 		if(oldSrc)
 			URL.revokeObjectURL(oldSrc);
 	}
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(7);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(5)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./common.less", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./../../node_modules/less-loader/index.js!./common.less");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(4)();
+	// imports
+
+
+	// module
+	exports.push([module.id, "@charset \"utf-8\";\nhtml,\nbody,\nul,\nli,\nol,\ndl,\ndd,\ndt,\np,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\nform,\nfieldset,\nlegend,\nimg {\n  margin: 0;\n  padding: 0;\n}\nfieldset,\nimg {\n  border: none;\n}\nimg {\n  display: block;\n}\naddress,\ncaption,\ncite,\ncode,\ndfn,\nth,\nvar {\n  font-style: normal;\n  font-weight: normal;\n}\nul,\nol {\n  list-style: none;\n}\ninput {\n  padding-top: 0;\n  padding-bottom: 0;\n}\ninput::-moz-focus-inner {\n  border: none;\n  padding: 0;\n}\nselect,\ninput {\n  vertical-align: middle;\n}\nselect,\ninput,\ntextarea {\n  font-size: 12px;\n  margin: 0;\n}\ninput[type=\"text\"],\ninput[type=\"password\"],\ntextarea {\n  outline-style: none;\n  -webkit-appearance: none;\n}\ntextarea {\n  resize: none;\n}\ninput,\ntextarea {\n  background: none;\n  border: none;\n}\ntable {\n  border-collapse: collapse;\n}\nbody {\n  font: 14px/24px \"\\5FAE\\8F6F\\96C5\\9ED1\", Verdana, Tahoma, \"Lucida Grande\";\n  color: #666;\n  background: #fff;\n}\na {\n  color: #666;\n  text-decoration: none;\n}\na:visited {\n  color: #666;\n}\na:hover,\na:active,\na:focus {\n  color: #ff8400;\n  text-decoration: underline;\n}\n/*-----------------------------------------*/\n/*-----------------------------------------*/\n#header {\n  height: 48px;\n  line-height: 48px;\n}\n#header .header_l {\n  float: left;\n  display: inline;\n}\n#header .header_r {\n  float: right;\n  display: inline;\n}\n#header .header_r li {\n  float: left;\n  display: inline;\n  margin-left: 30px \\9;\n}\n", ""]);
+
+	// exports
 
 
 /***/ }
